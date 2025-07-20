@@ -1,0 +1,285 @@
+==================================================
+  _____     _     _        
+ / ____|   | |   | |       
+| (___   __| | __| | ___   _ _ __ 
+ \___ \ / _` |/ _` |/ / | | | '_ \ 
+ ____) | (_| | (_|   <| |_| | | | |
+|_____/ \__,_|\__,_|\_\__,_|_| |_|
+Seiko: The Precision Scalper
+==================================================
+Bot Configuration:
+  Tokens: USDC, WETH, DAI
+  Chain: evm
+  Specific Chain: eth
+  Interval: 10 seconds
+  Iterations: 1000
+==================================================
+[92m[Recall API Health: OK][0m {"status":"ok","timestamp":"2025-07-17T10:32:32.091Z","uptime":555017.822199075,"version":"1.0.0"}
+==================================================
+
+Cycle 1
+Current Balances:
+  0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174: 5000 on polygon
+  0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA: 5000 on base
+  0xaf88d065e77c8cc2239327c5edb3a432268e5831: 5000 on arbitrum
+  0x7f5c764cbc14f9669b88837ca1490cca17c31607: 5000 on optimism
+  So11111111111111111111111111111111111111112: 10 on svm
+  EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v: 5000 on svm
+  WETH: 0.006831408765988144 on eth
+  DAI: 5.998031907432346 on eth
+  USDC: 4970.306311099706 on eth
+Not enough data for analysis for USDC->WETH
+Not enough data for analysis for USDC->DAI
+Not enough data for analysis for WETH->DAI
+
+Cycle 2
+Current Balances:
+  0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174: 5000 on polygon
+  0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA: 5000 on base
+  0xaf88d065e77c8cc2239327c5edb3a432268e5831: 5000 on arbitrum
+  0x7f5c764cbc14f9669b88837ca1490cca17c31607: 5000 on optimism
+  So11111111111111111111111111111111111111112: 10 on svm
+  EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v: 5000 on svm
+  WETH: 0.006831408765988144 on eth
+  DAI: 5.998031907432346 on eth
+  USDC: 4970.306311099706 on eth
+[USDC->WETH] Placing buy and sell for 1 units at price 0.9994
+Buy result: {'success': True, 'transaction': {'id': '6cf8dc18-1865-4fbc-9ded-a13891d5fa8b', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'toToken': '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 'fromAmount': 1, 'toAmount': 0.00028793191318372, 'price': 0.00028793191318372, 'tradeAmountUsd': 0.9995, 'toTokenSymbol': 'WETH', 'fromTokenSymbol': 'USDC', 'success': True, 'error': None, 'reason': 'Seiko scalping buy USDC->WETH', 'timestamp': '2025-07-17T10:32:46.177Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+Sell result: None
+[USDC->DAI] Placing buy and sell for 1 units at price 0.9995
+Buy result: {'success': True, 'transaction': {'id': '086b04dd-6510-4ee3-a3d3-b4b0badb4f42', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'toToken': '0x6B175474E89094C44Da98b954EedeAC495271d0F', 'fromAmount': 1, 'toAmount': 0.999894610450162, 'price': 0.999894610450162, 'tradeAmountUsd': 0.9994, 'toTokenSymbol': 'DAI', 'fromTokenSymbol': 'USDC', 'success': True, 'error': None, 'reason': 'Seiko scalping buy USDC->DAI', 'timestamp': '2025-07-17T10:32:47.353Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+Sell result: {'success': True, 'transaction': {'id': '291e882c-0817-463e-a172-7b6a69724d9d', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0x6B175474E89094C44Da98b954EedeAC495271d0F', 'toToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'fromAmount': 1, 'toAmount': 0.9999948790967359, 'price': 0.9999948790967359, 'tradeAmountUsd': 0.9995, 'toTokenSymbol': 'USDC', 'fromTokenSymbol': 'DAI', 'success': True, 'error': None, 'reason': 'Seiko scalping sell DAI->USDC', 'timestamp': '2025-07-17T10:32:49.109Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+[WETH->DAI] Spread too wide: 7.8100000000004
+
+Cycle 3
+Current Balances:
+  0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174: 5000 on polygon
+  0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA: 5000 on base
+  0xaf88d065e77c8cc2239327c5edb3a432268e5831: 5000 on arbitrum
+  0x7f5c764cbc14f9669b88837ca1490cca17c31607: 5000 on optimism
+  So11111111111111111111111111111111111111112: 10 on svm
+  EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v: 5000 on svm
+  WETH: 0.007119340679171865 on eth
+  DAI: 5.997926517882508 on eth
+  USDC: 4969.306305978803 on eth
+[USDC->WETH] Placing buy and sell for 1 units at price 0.9994
+Buy result: {'success': True, 'transaction': {'id': 'fb7edc27-aafb-455d-a66a-becd3f46ed3a', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'toToken': '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 'fromAmount': 1, 'toAmount': 0.0002883923511194583, 'price': 0.0002883923511194583, 'tradeAmountUsd': 0.9994, 'toTokenSymbol': 'WETH', 'fromTokenSymbol': 'USDC', 'success': True, 'error': None, 'reason': 'Seiko scalping buy USDC->WETH', 'timestamp': '2025-07-17T10:33:01.802Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+Sell result: None
+[USDC->DAI] Placing buy and sell for 1.0424264068712352 units at price 0.9994
+Buy result: {'success': True, 'transaction': {'id': '512780d2-9040-41d2-9eb1-fba501b9233f', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'toToken': '0x6B175474E89094C44Da98b954EedeAC495271d0F', 'fromAmount': 1.0424264068712352, 'toAmount': 1.0423172115701675, 'price': 0.999895248911244, 'tradeAmountUsd': 1.0418009510271125, 'toTokenSymbol': 'DAI', 'fromTokenSymbol': 'USDC', 'success': True, 'error': None, 'reason': 'Seiko scalping buy USDC->DAI', 'timestamp': '2025-07-17T10:33:03.069Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+Sell result: {'success': True, 'transaction': {'id': '99ad7c99-e580-475c-85f1-2088400dca09', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0x6B175474E89094C44Da98b954EedeAC495271d0F', 'toToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'fromAmount': 1.0424264068712352, 'toAmount': 1.042421192839605, 'price': 0.9999949981777171, 'tradeAmountUsd': 1.0419051936677997, 'toTokenSymbol': 'USDC', 'fromTokenSymbol': 'DAI', 'success': True, 'error': None, 'reason': 'Seiko scalping sell DAI->USDC', 'timestamp': '2025-07-17T10:33:03.997Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+[WETH->DAI] Spread too wide: 7.8100000000004
+
+Cycle 4
+Current Balances:
+  0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174: 5000 on polygon
+  0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA: 5000 on base
+  0xaf88d065e77c8cc2239327c5edb3a432268e5831: 5000 on arbitrum
+  0x7f5c764cbc14f9669b88837ca1490cca17c31607: 5000 on optimism
+  So11111111111111111111111111111111111111112: 10 on svm
+  EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v: 5000 on svm
+  WETH: 0.007407733030291323 on eth
+  DAI: 5.99781732258144 on eth
+  USDC: 4968.306300764771 on eth
+[USDC->WETH] Placing buy and sell for 1.0389711431703388 units at price 0.9995
+Buy result: {'success': True, 'transaction': {'id': 'c71a62b5-ce1e-4a54-b2de-17954da3526a', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'toToken': '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 'fromAmount': 1.0389711431703388, 'toAmount': 0.00029962006132263686, 'price': 0.0002883815044259745, 'tradeAmountUsd': 1.0383477604844364, 'toTokenSymbol': 'WETH', 'fromTokenSymbol': 'USDC', 'success': True, 'error': None, 'reason': 'Seiko scalping buy USDC->WETH', 'timestamp': '2025-07-17T10:33:16.059Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+Sell result: None
+[USDC->DAI] Placing buy and sell for 1.045000000000045 units at price 0.9994
+Buy result: {'success': True, 'transaction': {'id': '47f5a3cb-4570-4069-b3a4-bdfbb643871d', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'toToken': '0x6B175474E89094C44Da98b954EedeAC495271d0F', 'fromAmount': 1.045000000000045, 'toAmount': 1.0448897034120255, 'price': 0.9998944530258186, 'tradeAmountUsd': 1.0443730000000448, 'toTokenSymbol': 'DAI', 'fromTokenSymbol': 'USDC', 'success': True, 'error': None, 'reason': 'Seiko scalping buy USDC->DAI', 'timestamp': '2025-07-17T10:33:17.273Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+Sell result: {'success': True, 'transaction': {'id': 'feb03e56-3551-4ea0-8c16-3c71445228c0', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0x6B175474E89094C44Da98b954EedeAC495271d0F', 'toToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'fromAmount': 1.045000000000045, 'toAmount': 1.0450987016024054, 'price': 1.0000944512941248, 'tradeAmountUsd': 1.044477500000045, 'toTokenSymbol': 'USDC', 'fromTokenSymbol': 'DAI', 'success': True, 'error': None, 'reason': 'Seiko scalping sell DAI->USDC', 'timestamp': '2025-07-17T10:33:17.924Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+[WETH->DAI] Spread too wide: 7.8100000000004
+
+Cycle 5
+Current Balances:
+  0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174: 5000 on polygon
+  0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA: 5000 on base
+  0xaf88d065e77c8cc2239327c5edb3a432268e5831: 5000 on arbitrum
+  0x7f5c764cbc14f9669b88837ca1490cca17c31607: 5000 on optimism
+  So11111111111111111111111111111111111111112: 10 on svm
+  EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v: 5000 on svm
+  WETH: 0.00770735309161396 on eth
+  DAI: 5.99770702599342 on eth
+  USDC: 4967.267428323202 on eth
+[USDC->WETH] Placing buy and sell for 1.036000000000036 units at price 0.9994
+Buy result: {'success': True, 'transaction': {'id': '4a23a574-9602-4db1-890b-8b924f4237e6', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'toToken': '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 'fromAmount': 1.036000000000036, 'toAmount': 0.0002987745336002011, 'price': 0.00028839240694999107, 'tradeAmountUsd': 1.035378400000036, 'toTokenSymbol': 'WETH', 'fromTokenSymbol': 'USDC', 'success': True, 'error': None, 'reason': 'Seiko scalping buy USDC->WETH', 'timestamp': '2025-07-17T10:33:29.693Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+Sell result: None
+[USDC->DAI] Placing buy and sell for 1.0440908153701414 units at price 0.9995
+Buy result: {'success': True, 'transaction': {'id': '147ab466-b7d9-42b4-8c30-a25542b35cc0', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'toToken': '0x6B175474E89094C44Da98b954EedeAC495271d0F', 'fromAmount': 1.0440908153701414, 'toAmount': 1.044085402786165, 'price': 0.9999948159835365, 'tradeAmountUsd': 1.0435687699624563, 'toTokenSymbol': 'DAI', 'fromTokenSymbol': 'USDC', 'success': True, 'error': None, 'reason': 'Seiko scalping buy USDC->DAI', 'timestamp': '2025-07-17T10:33:31.086Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+Sell result: {'success': True, 'transaction': {'id': 'a7b8840d-8b66-48b8-96b6-f60f72002583', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0x6B175474E89094C44Da98b954EedeAC495271d0F', 'toToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'fromAmount': 1.0440908153701414, 'toAmount': 1.044190183701349, 'price': 1.0000951721150544, 'tradeAmountUsd': 1.0435687699624563, 'toTokenSymbol': 'USDC', 'fromTokenSymbol': 'DAI', 'success': True, 'error': None, 'reason': 'Seiko scalping sell DAI->USDC', 'timestamp': '2025-07-17T10:33:31.711Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+[WETH->DAI] Spread too wide: 14.890000000000327
+
+Cycle 6
+Current Balances:
+  0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174: 5000 on polygon
+  0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA: 5000 on base
+  0xaf88d065e77c8cc2239327c5edb3a432268e5831: 5000 on arbitrum
+  0x7f5c764cbc14f9669b88837ca1490cca17c31607: 5000 on optimism
+  So11111111111111111111111111111111111111112: 10 on svm
+  EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v: 5000 on svm
+  WETH: 0.00800612762521416 on eth
+  DAI: 5.997701613409443 on eth
+  USDC: 4966.231527691532 on eth
+[USDC->WETH] Placing buy and sell for 1.0424264068712352 units at price 0.9995
+Buy result: {'success': True, 'transaction': {'id': '0c444562-79bb-4548-b3d9-5c72b63680b5', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'toToken': '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 'fromAmount': 1.0424264068712352, 'toAmount': 0.0003000036409731379, 'price': 0.00028779359290559067, 'tradeAmountUsd': 1.0418009510271125, 'toTokenSymbol': 'WETH', 'fromTokenSymbol': 'USDC', 'success': True, 'error': None, 'reason': 'Seiko scalping buy USDC->WETH', 'timestamp': '2025-07-17T10:33:43.841Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+Sell result: None
+[USDC->DAI] Placing buy and sell for 1.045000000000045 units at price 0.9994
+Buy result: {'success': True, 'transaction': {'id': 'b2c763c0-d37f-40e2-be6f-d18fc64dbea5', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'toToken': '0x6B175474E89094C44Da98b954EedeAC495271d0F', 'fromAmount': 1.045000000000045, 'toAmount': 1.0449948949806604, 'price': 0.9999951148139861, 'tradeAmountUsd': 1.044477500000045, 'toTokenSymbol': 'DAI', 'fromTokenSymbol': 'USDC', 'success': True, 'error': None, 'reason': 'Seiko scalping buy USDC->DAI', 'timestamp': '2025-07-17T10:33:45.192Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+Sell result: {'success': True, 'transaction': {'id': '10ddf73a-bc5f-4712-845e-2286f090d2ca', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0x6B175474E89094C44Da98b954EedeAC495271d0F', 'toToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'fromAmount': 1.045000000000045, 'toAmount': 1.0450986975931946, 'price': 1.0000944474575595, 'tradeAmountUsd': 1.044477500000045, 'toTokenSymbol': 'USDC', 'fromTokenSymbol': 'DAI', 'success': True, 'error': None, 'reason': 'Seiko scalping sell DAI->USDC', 'timestamp': '2025-07-17T10:33:46.349Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+[WETH->DAI] Spread too wide: 14.890000000000327
+==================================================
+  _____     _     _        
+ / ____|   | |   | |       
+| (___   __| | __| | ___   _ _ __ 
+ \___ \ / _` |/ _` |/ / | | | '_ \ 
+ ____) | (_| | (_|   <| |_| | | | |
+|_____/ \__,_|\__,_|\_\__,_|_| |_|
+Seiko: The Precision Scalper
+==================================================
+Bot Configuration:
+  Tokens: USDC, WETH, DAI
+  Chain: evm
+  Specific Chain: eth
+  Interval: 10 seconds
+  Iterations: 1000
+==================================================
+[92m[Recall API Health: OK][0m {"status":"ok","timestamp":"2025-07-17T10:40:59.502Z","uptime":555525.233199696,"version":"1.0.0"}
+==================================================
+
+Cycle 1
+Current Balances:
+  0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174: 5000 on polygon
+  0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA: 5000 on base
+  0xaf88d065e77c8cc2239327c5edb3a432268e5831: 5000 on arbitrum
+  0x7f5c764cbc14f9669b88837ca1490cca17c31607: 5000 on optimism
+  So11111111111111111111111111111111111111112: 10 on svm
+  EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v: 5000 on svm
+  WETH: 0.008306131266187297 on eth
+  DAI: 5.997696508390058 on eth
+  USDC: 4965.189199982254 on eth
+Not enough data for analysis for USDC->WETH
+Not enough data for analysis for USDC->DAI
+Not enough data for analysis for WETH->DAI
+
+Cycle 2
+Current Balances:
+  0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174: 5000 on polygon
+  0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA: 5000 on base
+  0xaf88d065e77c8cc2239327c5edb3a432268e5831: 5000 on arbitrum
+  0x7f5c764cbc14f9669b88837ca1490cca17c31607: 5000 on optimism
+  So11111111111111111111111111111111111111112: 10 on svm
+  EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v: 5000 on svm
+  WETH: 0.008306131266187297 on eth
+  DAI: 5.997696508390058 on eth
+  USDC: 4965.189199982254 on eth
+[USDC->WETH] Placing buy and sell for 1 units at price 0.9995
+Buy result: {'success': True, 'transaction': {'id': '93603cda-c4ad-4bc2-8f05-e5945b39080b', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'toToken': '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 'fromAmount': 1, 'toAmount': 0.0002877937173323631, 'price': 0.0002877937173323631, 'tradeAmountUsd': 0.9994, 'toTokenSymbol': 'WETH', 'fromTokenSymbol': 'USDC', 'success': True, 'error': None, 'reason': 'Seiko scalping buy USDC->WETH', 'timestamp': '2025-07-17T10:41:17.116Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+Sell result: None
+[USDC->DAI] Placing buy and sell for 1.045000000000045 units at price 0.9994
+Buy result: {'success': True, 'transaction': {'id': '27ff5fc4-59d6-4e75-a1fe-ad16724c965c', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'toToken': '0x6B175474E89094C44Da98b954EedeAC495271d0F', 'fromAmount': 1.045000000000045, 'toAmount': 1.0449946320122896, 'price': 0.9999948631696121, 'tradeAmountUsd': 1.044477500000045, 'toTokenSymbol': 'DAI', 'fromTokenSymbol': 'USDC', 'success': True, 'error': None, 'reason': 'Seiko scalping buy USDC->DAI', 'timestamp': '2025-07-17T10:41:18.588Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+Sell result: {'success': True, 'transaction': {'id': '965a40ca-a123-43df-8794-06df34fc9a4b', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0x6B175474E89094C44Da98b954EedeAC495271d0F', 'toToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'fromAmount': 1.045000000000045, 'toAmount': 1.0450993138786584, 'price': 1.0000950372044146, 'tradeAmountUsd': 1.044477500000045, 'toTokenSymbol': 'USDC', 'fromTokenSymbol': 'DAI', 'success': True, 'error': None, 'reason': 'Seiko scalping sell DAI->USDC', 'timestamp': '2025-07-17T10:41:19.282Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+[WETH->DAI] Spread too wide: 9.610000000000127
+
+Cycle 3
+Current Balances:
+  0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174: 5000 on polygon
+  0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA: 5000 on base
+  0xaf88d065e77c8cc2239327c5edb3a432268e5831: 5000 on arbitrum
+  0x7f5c764cbc14f9669b88837ca1490cca17c31607: 5000 on optimism
+  So11111111111111111111111111111111111111112: 10 on svm
+  EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v: 5000 on svm
+  WETH: 0.00859392498351966 on eth
+  DAI: 5.997691140402303 on eth
+  USDC: 4964.189299296132 on eth
+[USDC->WETH] Placing buy and sell for 1.0000000000001 units at price 0.9995
+Buy result: {'success': True, 'transaction': {'id': '61a7fcd0-ddbe-484a-bee9-2f466adc83f3', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'toToken': '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 'fromAmount': 1.0000000000001, 'toAmount': 0.00028880657986009203, 'price': 0.0002888065798600632, 'tradeAmountUsd': 0.9994000000000998, 'toTokenSymbol': 'WETH', 'fromTokenSymbol': 'USDC', 'success': True, 'error': None, 'reason': 'Seiko scalping buy USDC->WETH', 'timestamp': '2025-07-17T10:41:31.895Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+Sell result: None
+[USDC->DAI] Placing buy and sell for 1.0424264068712352 units at price 0.9995
+Buy result: {'success': True, 'transaction': {'id': '73fab446-0747-43ef-ae6c-c07cf411b6f2', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'toToken': '0x6B175474E89094C44Da98b954EedeAC495271d0F', 'fromAmount': 1.0424264068712352, 'toAmount': 1.0423162189839725, 'price': 0.9998942967229759, 'tradeAmountUsd': 1.0418009510271125, 'toTokenSymbol': 'DAI', 'fromTokenSymbol': 'USDC', 'success': True, 'error': None, 'reason': 'Seiko scalping buy USDC->DAI', 'timestamp': '2025-07-17T10:41:33.376Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+Sell result: {'success': True, 'transaction': {'id': 'fdd594f0-658d-4585-bbd4-f55c837de289', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0x6B175474E89094C44Da98b954EedeAC495271d0F', 'toToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'fromAmount': 1.0424264068712352, 'toAmount': 1.0424205367572934, 'price': 0.9999943687977366, 'tradeAmountUsd': 1.0419051936677997, 'toTokenSymbol': 'USDC', 'fromTokenSymbol': 'DAI', 'success': True, 'error': None, 'reason': 'Seiko scalping sell DAI->USDC', 'timestamp': '2025-07-17T10:41:34.030Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+[WETH->DAI] Spread too wide: 9.610000000000127
+
+Cycle 4
+Current Balances:
+  0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174: 5000 on polygon
+  0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA: 5000 on base
+  0xaf88d065e77c8cc2239327c5edb3a432268e5831: 5000 on arbitrum
+  0x7f5c764cbc14f9669b88837ca1490cca17c31607: 5000 on optimism
+  So11111111111111111111111111111111111111112: 10 on svm
+  EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v: 5000 on svm
+  WETH: 0.008882731563379752 on eth
+  DAI: 5.99758095251504 on eth
+  USDC: 4963.189293426018 on eth
+[USDC->WETH] Placing buy and sell for 1.0389711431703388 units at price 0.9994
+Buy result: {'success': True, 'transaction': {'id': 'c0646488-f5bc-4f3e-b05e-c48b61b60482', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'toToken': '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 'fromAmount': 1.0389711431703388, 'toAmount': 0.0002994646573824164, 'price': 0.0002882319295881727, 'tradeAmountUsd': 1.0383477604844364, 'toTokenSymbol': 'WETH', 'fromTokenSymbol': 'USDC', 'success': True, 'error': None, 'reason': 'Seiko scalping buy USDC->WETH', 'timestamp': '2025-07-17T10:41:46.057Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+Sell result: None
+[seiko] ==================================================
+[seiko]   _____     _     _        
+[seiko]  / ____|   | |   | |       
+[seiko] | (___   __| | __| | ___   _ _ __ 
+[seiko]  \___ \ / _` |/ _` |/ / | | | '_ \ 
+[seiko]  ____) | (_| | (_|   <| |_| | | | |
+[seiko] |_____/ \__,_|\__,_|\_\__,_|_| |_|
+[seiko] Seiko: The Precision Scalper
+[seiko] ==================================================
+[seiko] Bot Configuration:
+[seiko]   Tokens: USDC, WETH, DAI
+[seiko]   Chain: evm
+[seiko]   Specific Chain: eth
+[seiko]   Interval: 10 seconds
+[seiko]   Iterations: 1000
+[seiko] ==================================================
+[seiko] [92m[Recall API Health: OK][0m {"status":"ok","timestamp":"2025-07-17T10:52:46.813Z","uptime":556232.54414817,"version":"1.0.0"}
+[seiko] ==================================================
+[seiko] 
+Cycle 1
+[seiko] Current Balances:
+[seiko]   0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174: 5000 on polygon
+[seiko]   0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA: 5000 on base
+[seiko]   0xaf88d065e77c8cc2239327c5edb3a432268e5831: 5000 on arbitrum
+[seiko]   0x7f5c764cbc14f9669b88837ca1490cca17c31607: 5000 on optimism
+[seiko]   So11111111111111111111111111111111111111112: 10 on svm
+[seiko]   EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v: 5000 on svm
+[seiko]   WETH: 0.009182196220762169 on eth
+[seiko]   DAI: 5.99758095251504 on eth
+[seiko]   USDC: 4962.150322282847 on eth
+[seiko] Not enough data for analysis for USDC->WETH
+[seiko] Not enough data for analysis for USDC->DAI
+[seiko] Not enough data for analysis for WETH->DAI
+[seiko] 
+Cycle 2
+[seiko] Current Balances:
+[seiko]   0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174: 5000 on polygon
+[seiko]   0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA: 5000 on base
+[seiko]   0xaf88d065e77c8cc2239327c5edb3a432268e5831: 5000 on arbitrum
+[seiko]   0x7f5c764cbc14f9669b88837ca1490cca17c31607: 5000 on optimism
+[seiko]   So11111111111111111111111111111111111111112: 10 on svm
+[seiko]   EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v: 5000 on svm
+[seiko]   WETH: 0.009182196220762169 on eth
+[seiko]   DAI: 5.99758095251504 on eth
+[seiko]   USDC: 4962.150322282847 on eth
+[seiko] [USDC->WETH] Placing buy and sell for 1 units at price 0.9995
+[seiko] Buy result: {'success': True, 'transaction': {'id': '3dfd04d5-20bb-4ba9-a19e-a9f2f1e9b4fd', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'toToken': '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 'fromAmount': 1, 'toAmount': 0.00028906174886153655, 'price': 0.00028906174886153655, 'tradeAmountUsd': 0.9995, 'toTokenSymbol': 'WETH', 'fromTokenSymbol': 'USDC', 'success': True, 'error': None, 'reason': 'Seiko scalping buy USDC->WETH', 'timestamp': '2025-07-17T10:53:00.820Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+[seiko] Sell result: None
+[seiko] [USDC->DAI] Placing buy and sell for 1 units at price 0.9995
+[seiko] Buy result: {'success': True, 'transaction': {'id': '598307de-a417-4651-9cfc-affdd03479ca', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'toToken': '0x6B175474E89094C44Da98b954EedeAC495271d0F', 'fromAmount': 1, 'toAmount': 0.9999954662109305, 'price': 0.9999954662109305, 'tradeAmountUsd': 0.9995, 'toTokenSymbol': 'DAI', 'fromTokenSymbol': 'USDC', 'success': True, 'error': None, 'reason': 'Seiko scalping buy USDC->DAI', 'timestamp': '2025-07-17T10:53:02.215Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+[seiko] Sell result: {'success': True, 'transaction': {'id': 'e6c79fed-71aa-4a38-b8a5-fdf236404e71', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0x6B175474E89094C44Da98b954EedeAC495271d0F', 'toToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'fromAmount': 1, 'toAmount': 1.000094733750445, 'price': 1.000094733750445, 'tradeAmountUsd': 0.9995, 'toTokenSymbol': 'USDC', 'fromTokenSymbol': 'DAI', 'success': True, 'error': None, 'reason': 'Seiko scalping sell DAI->USDC', 'timestamp': '2025-07-17T10:53:02.979Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+[seiko] [WETH->DAI] Spread too wide: 14.210000000000036
+[seiko] 
+Cycle 3
+[seiko] Current Balances:
+[seiko]   0x2791Bca1f2de4661ED88A30C99A7a9449Aa84174: 5000 on polygon
+[seiko]   0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA: 5000 on base
+[seiko]   0xaf88d065e77c8cc2239327c5edb3a432268e5831: 5000 on arbitrum
+[seiko]   0x7f5c764cbc14f9669b88837ca1490cca17c31607: 5000 on optimism
+[seiko]   So11111111111111111111111111111111111111112: 10 on svm
+[seiko]   EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v: 5000 on svm
+[seiko]   WETH: 0.009471257969623706 on eth
+[seiko]   DAI: 5.997576418725971 on eth
+[seiko]   USDC: 4961.150417016597 on eth
+[seiko] [USDC->WETH] Placing buy and sell for 1.0000000000001 units at price 0.9995
+[seiko] Buy result: {'success': True, 'transaction': {'id': '90a641ff-6336-4aa3-bbbd-3dce24389dfb', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'toToken': '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', 'fromAmount': 1.0000000000001, 'toAmount': 0.0002879319239604544, 'price': 0.0002879319239604256, 'tradeAmountUsd': 0.9995000000001, 'toTokenSymbol': 'WETH', 'fromTokenSymbol': 'USDC', 'success': True, 'error': None, 'reason': 'Seiko scalping buy USDC->WETH', 'timestamp': '2025-07-17T10:53:15.121Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+[seiko] Sell result: None
+[seiko] [USDC->DAI] Placing buy and sell for 1.0000000000001 units at price 0.9995
+[seiko] Buy result: {'success': True, 'transaction': {'id': '04e680ec-2e73-483e-8146-ec353a1bb065', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'toToken': '0x6B175474E89094C44Da98b954EedeAC495271d0F', 'fromAmount': 1.0000000000001, 'toAmount': 0.9998947974958969, 'price': 0.999894797495797, 'tradeAmountUsd': 0.9994000000000998, 'toTokenSymbol': 'DAI', 'fromTokenSymbol': 'USDC', 'success': True, 'error': None, 'reason': 'Seiko scalping buy USDC->DAI', 'timestamp': '2025-07-17T10:53:16.678Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+[seiko] Sell result: {'success': True, 'transaction': {'id': 'd6f4c7e1-368d-4aa8-8f55-8b8f5278cb08', 'agentId': '0d711dd9-8e18-4ed3-be5f-f2d56e9521e9', 'competitionId': '104e8ced-e2df-4b82-92e7-e62229b39fe8', 'fromToken': '0x6B175474E89094C44Da98b954EedeAC495271d0F', 'toToken': '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 'fromAmount': 1.0000000000001, 'toAmount': 0.999995229312343, 'price': 0.999995229312243, 'tradeAmountUsd': 0.9995000000001, 'toTokenSymbol': 'USDC', 'fromTokenSymbol': 'DAI', 'success': True, 'error': None, 'reason': 'Seiko scalping sell DAI->USDC', 'timestamp': '2025-07-17T10:53:17.487Z', 'fromChain': 'evm', 'toChain': 'evm', 'fromSpecificChain': 'eth', 'toSpecificChain': 'eth'}}
+[seiko] [WETH->DAI] Spread too wide: 14.210000000000036
