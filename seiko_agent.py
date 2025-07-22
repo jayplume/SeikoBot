@@ -50,6 +50,17 @@ class RecallAPI:
         self.session = requests.Session()
         self.session.headers.update(HEADERS)
 
+    # def get_price(self, token_address, chain="evm", specific_chain="eth"):
+    #     params = {
+    #         "token": token_address,
+    #         "chain": chain,
+    #         "specificChain": specific_chain
+    #     }
+    #     resp = self.session.get(PRICE_ENDPOINT, params=params)
+    #     if resp.ok:
+    #         return resp.json().get("price", None)
+    #     return None
+
     def get_price(self, token_address, chain="evm", specific_chain="eth"):
         params = {
             "token": token_address,
@@ -59,6 +70,7 @@ class RecallAPI:
         resp = self.session.get(PRICE_ENDPOINT, params=params)
         if resp.ok:
             return resp.json().get("price", None)
+        print("Failed price fetch:", resp.status_code, resp.text)
         return None
 
     def get_balances(self):
@@ -79,7 +91,10 @@ class RecallAPI:
             "toSpecificChain": to_specific_chain
         }
         resp = self.session.post(TRADE_ENDPOINT, json=data)
-        return resp.json() if resp.ok else None
+        if resp.ok:
+            return resp.json()
+        print("[seiko] Trade API error:", resp.status_code, resp.text)
+        return None
 
 class MicrostructureAnalyzer:
     def analyze(self, price_history):
